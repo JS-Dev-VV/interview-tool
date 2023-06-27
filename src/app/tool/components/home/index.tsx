@@ -2,25 +2,27 @@
 import Classes from "./home.module.scss"
 import Data from "./data.json"
 import { useState } from "react"
-import { getRandomNumber } from "../../common/utils"
+import { getRandomNumber, getUniqueNumArray } from "../../common/utils"
 
 export default function InterviewToolHome() {
 
-  const [question, setQuestion] = useState("")
+  const [questionStr, setQuestionStr] = useState("")
   const [answer, setAnswer] = useState("")
 
   const handleGenerateQuestion = () => {
-    let qNum = getRandomNumber(1, 50)
-    let question = `${qNum}: ${Data?.questions[qNum - 1]}`
-    setQuestion(question)
-    // setAnswer(Data?.answers[qNum - 1])
+    let uniqueNumArray: number[] = getUniqueNumArray(1, 50, 5)
+    let qtnStr = "";
+    uniqueNumArray.map((item: number) => {
+      qtnStr = qtnStr + "\n" + `${item}: ${Data.questions[item - 1]}`
+    })
+    setQuestionStr(qtnStr.trim())
   }
   return (
     <>
       <div className={`${Classes.interview_home_wrapper}`}>
         <h1 className={`text-center`}>Generate Interview Questions</h1>
         <div className={`${Classes.question_wrapper}`}>
-          <textarea placeholder="Your question will appear here." defaultValue={question} />
+          <textarea placeholder="Your question will appear here." defaultValue={questionStr} />
         </div>
         <div className={`${Classes.button_wrapper} text-center`}>
           <button className={`btn btn-light`} onClick={() => { handleGenerateQuestion() }}>Generate Question</button>
