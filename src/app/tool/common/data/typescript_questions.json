@@ -49,7 +49,27 @@
         "Explain the concept of inheritance in TypeScript.",
         "What are conditional types? How do you create them?",
         "What is the Function type in TypeScript?",
-        "List some of the utility types provided by TypeScript and explain their usage?"
+        "List some of the utility types provided by TypeScript and explain their usage?",
+        "How can you debug a TypeScript file?",
+        "What is Scope variable?",
+        "How does TypeScript support optional parameters in function?",
+        "What are Mixins?",
+        "Explain Decorators in TypeScript.",
+        "Does TypeScript support function overloading?",
+        "What is namespace in Typescript and how to declare it?",
+        "What is the difference between the internal module and the external module?",
+        "What are modules in TypeScript?",
+        "How is TypeScript an optionally statically typed language?",
+        "What are the access modifiers supported by TypeScript?",
+        "What are Classes in TypeScript? List out some of the features.",
+        "What are Interfaces in TypeScript?",
+        "What are the object-oriented terms supported by TypeScript?",
+        "Is it possible to compile .ts automatically with real-time changes in the .ts file?",
+        "What are the different ways of declaring a Variable?",
+        "What are Variables in TypeScript and how to create them?",
+        "List out the built-in data types in TypeScript.",
+        "Can we combine multiple .ts files into a single .js file?",
+        "How do you compile TypeScript files?"
     ],
     "answers": []
 }

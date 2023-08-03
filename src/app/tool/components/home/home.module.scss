@@ -3,6 +3,23 @@
     height: 100%;
     margin: 2.5% auto;
 
+    .checkbox_wrapper {
+        display: flex;
+        color: white;
+
+        div {
+            margin: 0 1rem 0 0;
+
+            input {
+                cursor: pointer;
+            }
+
+            label {
+                margin: 0 0 0 0.25rem;
+            }
+        }
+    }
+
     .question_wrapper,
     .answer_wrapper {
         margin: 2rem 0 0 0;
